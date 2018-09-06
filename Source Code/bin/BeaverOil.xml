@@ -1,0 +1,819 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BeaverOil
+</name>
+</assembly>
+<members>
+<member name="T:BeaverOil.DSCheckRegister.tblPayablesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSCheckRegister.tblPayablesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSCheckRegister.tblPayablesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSCheckRegister">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSNewJobSearch.tblGeneratorsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSNewJobSearch.tblGeneratorsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSNewJobSearch.tblGeneratorsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSNewJobSearch">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSDisposalFacilities.tblDisposalFacilitiesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSDisposalFacilities.tblDisposalFacilitiesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSDisposalFacilities.tblDisposalFacilitiesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSDisposalFacilities">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSP2Manifests.tblJobTicketsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSP2Manifests.tblProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSP2Manifests.tblJobTicketsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSP2Manifests.tblProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSP2Manifests.tblJobTicketsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSP2Manifests.tblProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSP2Manifests">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.dsPRates.tblProductRatesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.dsPRates.tblProductRatesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.dsPRates.tblProductRatesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.dsPRates">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.dsDailyHazNonHaz.DailyLogDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.dsDailyHazNonHaz.DailyLogRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.dsDailyHazNonHaz.DailyLogRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.dsDailyHazNonHaz">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSEPA_BOLs.tblInvoicingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSEPA_BOLs.tblInvoicingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSEPA_BOLs.tblInvoicingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSEPA_BOLs">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSInHouseManifests.tblInvoicingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSInHouseManifests.tblInvoicingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSInHouseManifests.tblInvoicingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSInHouseManifests">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSCustomerReport.tblCustomersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSCustomerReport.tblCustomersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSCustomerReport.tblCustomersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSCustomerReport">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSPayable_Details.tblPayables_DetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSPayable_Details.tblPayables_DetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSPayable_Details.tblPayables_DetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSPayable_Details">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSPrintInvoice.tblInvoice_DetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSPrintInvoice.tblInvoice_DetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSPrintInvoice.tblInvoice_DetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSPrintInvoice">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSInvoicingReport.tblInvoicingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSInvoicingReport.tblInvoicingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSInvoicingReport.tblInvoicingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSInvoicingReport">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSJobBoard.tblJobTicketsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSJobBoard.tblJobTicketsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSJobBoard.tblJobTicketsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSJobBoard">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSNonHazardous.tblJobTicketsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSNonHazardous.tblJobTicketsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSNonHazardous.tblJobTicketsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSNonHazardous">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSCancelJobs.tblJobTicketsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSCancelJobs.tblJobTicketsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSCancelJobs.tblJobTicketsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSCancelJobs">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSHazardous.tblJobTicketsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSHazardous.tblJobTicketsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSHazardous.tblJobTicketsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSHazardous">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSInvoice_Details.tblInvoice_DetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSInvoice_Details.tblInvoice_DetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSInvoice_Details.tblInvoice_DetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSInvoice_Details">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSProductLabDat.tblProduct_LabDataDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSProductLabDat.tblProduct_LabDataRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSProductLabDat.tblProduct_LabDataRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSProductLabDat">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSReceivablesReport.tblInvoicingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSReceivablesReport.tblInvoicingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSReceivablesReport.tblInvoicingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSReceivablesReport">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSTransporterFacilities.tblTransportersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSTransporterFacilities.tblTransportersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSTransporterFacilities.tblTransportersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSTransporterFacilities">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSInvoiceDetails.tblInvoiceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSInvoiceDetails.tblInvoice_DetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSInvoiceDetails.tblInvoiceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSInvoiceDetails.tblInvoice_DetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSInvoiceDetails.tblInvoiceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSInvoiceDetails.tblInvoice_DetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSInvoiceDetails">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSJobTicket_Details.tblJobTickets_DetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSJobTicket_Details.tblJobTickets_DetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSJobTicket_Details.tblJobTickets_DetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSJobTicket_Details">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSDescriptions.tblHWNumberDESCsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSDescriptions.tblHWNumberDESCsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSDescriptions.tblHWNumberDESCsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSDescriptions">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSEPA_Manifests.tblInvoicingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSEPA_Manifests.tblInvoicingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSEPA_Manifests.tblInvoicingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSEPA_Manifests">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSJobBoards.tblJobTicketsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSJobBoards.tblJobTicketsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSJobBoards.tblJobTicketsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSJobBoards">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSInvoices.tblInvoicesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSInvoices.tblInvoicesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSInvoices.tblInvoicesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSInvoices">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DS_PayableCheck.qry_PrintCheckDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DS_PayableCheck.qry_PrintCheckRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DS_PayableCheck.qry_PrintCheckRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DS_PayableCheck">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSOutsideHaulers.tblJobTicketsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSOutsideHaulers.tblJobTicketsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSOutsideHaulers.tblJobTicketsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSOutsideHaulers">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.dsrptReceiptControl._TableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.dsrptReceiptControl._TableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.dsrptReceiptControl._TableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.dsrptReceiptControl">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSBOLs.tblJobTicketsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSBOLs.tblJobTicketsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSBOLs.tblJobTicketsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSBOLs">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSJobTickets_P.tblJobTicketsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSJobTickets_P.tblJobTicketsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSJobTickets_P.tblJobTicketsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSJobTickets_P">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSRecurringJobs.tblJobTickets_RecurringDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSRecurringJobs.tblJobTickets_RecurringRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSRecurringJobs.tblJobTickets_RecurringRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSRecurringJobs">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSAccounting.tblAccountingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSAccounting.tblAccountingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSAccounting.tblAccountingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSAccounting">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSCustomerSurveys.tblJobTicketsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSCustomerSurveys.tblJobTicketsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSCustomerSurveys.tblJobTicketsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSCustomerSurveys">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSListProducts.tblProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSListProducts.tblProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSListProducts.tblProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSListProducts">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSProductRates.tblProductRatesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSProductRates.tblProductRatesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSProductRates.tblProductRatesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSProductRates">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSVendors.tblVendorsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSVendors.tblVendorsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSVendors.tblVendorsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSVendors">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.dsGenList.tblGeneratorsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.dsGenList.tblGeneratorsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.dsGenList.tblGeneratorsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.dsGenList">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSItems.tblProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSItems.tblProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSItems.tblProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSItems">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSJobActivity.tblJobActivityDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSJobActivity.tblJobActivityRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSJobActivity.tblJobActivityRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSJobActivity">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSJobTicket.tblJobTicketsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSJobTicket.tblJobTicketsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSJobTicket.tblJobTicketsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSJobTicket">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSMultiStops.tblJobTicketsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSMultiStops.tblJobTicketsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSMultiStops.tblJobTicketsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSMultiStops">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.dsMWRD.MWRDReportDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.dsMWRD.MWRDReportRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.dsMWRD.MWRDReportRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.dsMWRD">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSInvoicing.tblInvoicingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSInvoicing.tblInvoicingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSInvoicing.tblInvoicingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSInvoicing">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSListGenerators.tblGeneratorsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSListGenerators.tblGeneratorsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSListGenerators.tblGeneratorsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSListGenerators">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSReceivables.tblReceivablesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSReceivables.tblReceivablesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSReceivables.tblReceivablesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSReceivables">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.dsAttachmentC._TableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.dsAttachmentC._TableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.dsAttachmentC._TableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.dsAttachmentC">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSEPA_HazardousLoads.tblInvoicingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSEPA_HazardousLoads.tblInvoicingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSEPA_HazardousLoads.tblInvoicingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSEPA_HazardousLoads">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:BeaverOil.DSrptGenerator.tblInvoicingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BeaverOil.DSrptGenerator.tblInvoicingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BeaverOil.DSrptGenerator.tblInvoicingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BeaverOil.DSrptGenerator">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,24 @@
+
+UPDATE tblJobTickets INNER JOIN tblJobTicketsNew ON tblJobTickets.JobTicketID = tblJobTicketsNew.JobTicketID
+SET tblJobTickets.JobTicketIDNew = tblJobTicketsNew.JobTicketIdNEW
+
+
+UPDATE tblJobTickets_Details INNER JOIN tblJobTickets ON tblJobTickets.JobTicketID = tblJobTickets_Details.JobTicketID
+SET tblJobTickets_Details.JobTicketIDNew =  tblJobTickets.JobTicketIdNEW
+
+
+
+UPDATE tblInvoicing INNER JOIN tblJobTickets ON tblJobTickets.JobTicketID = tblInvoicing.JobTicketID
+SET tblInvoicing.JobTicketIDNew =  tblJobTickets.JobTicketIdNEW
+
+
+
+SELECT tblJobTickets.JobTicketID, tblJobTickets.JobTicketIDNew, tblJobTickets.JobTicketNo, tblJobTickets_Details.JobTicketID, tblJobTickets_Details.JobTicketIDNew, tblInvoicing.JobTicketID, tblInvoicing.JobTicketIDNew
+FROM (tblJobTickets INNER JOIN tblJobTickets_Details ON tblJobTickets.JobTicketID = tblJobTickets_Details.JobTicketID) INNER JOIN tblInvoicing ON tblJobTickets.JobTicketID = tblInvoicing.JobTicketID
+WHERE (((tblJobTickets.JobTicketID)>95312 And (tblJobTickets.JobTicketID)<224157922));
+
+
+INSERT INTO tblJobTickets
+(JobTicketID, JobTicketNo, ScheduledTime, SpecialInstructions, SpecialInstructions_T, ProductID, ScheduleDate, NonHazardous, BillOfLading, Hazardous, Plant2Manifest, JobTicket, TransporterID, DisposalFacilityID, JobTicketDate, DriverName, JobPO, Attn, TruckNo, DriverRemarks, ManifestNo, RefNo, C_Arrived, C_Arrived_M, C_Departed, C_Departed_M, P_Start, P_Finish, U_Arrived, U_Arrived_M, U_Departed, U_Departed_M, JobTicketSubmitted, InvoiceCreated, Closed, IsJobRecurring, RecurringJobDesc, IsBeaver, IsMultiStop, IsOutsideHauler, IsCancelled, Drums, JobDone, TicketNo, ManifestText, TypeOfTruckID, R_JobTicketID, PrintFormC, IsManifest, bsw, jobclosed, WasteType, gallons)
+SELECT JobTicketID, JobTicketNo, ScheduledTime, SpecialInstructions, SpecialInstructions_T, ProductID, ScheduleDate, NonHazardous, BillOfLading, Hazardous, Plant2Manifest, JobTicket, TransporterID, DisposalFacilityID, JobTicketDate, DriverName, JobPO, Attn, TruckNo, DriverRemarks, ManifestNo, RefNo, C_Arrived, C_Arrived_M, C_Departed, C_Departed_M, P_Start, P_Finish, U_Arrived, U_Arrived_M, U_Departed, U_Departed_M, JobTicketSubmitted, InvoiceCreated, Closed, IsJobRecurring, RecurringJobDesc, IsBeaver, IsMultiStop, IsOutsideHauler, IsCancelled, Drums, JobDone, TicketNo, ManifestText, TypeOfTruckID, R_JobTicketID, PrintFormC, IsManifest, bsw, jobclosed, WasteType, gallons
+FROM tblJobTicketsNew;

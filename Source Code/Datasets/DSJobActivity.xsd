@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DSJobActivity" targetNamespace="http://www.tempuri.org/DSJobActivity.xsd" xmlns:mstns="http://www.tempuri.org/DSJobActivity.xsd" xmlns="http://www.tempuri.org/DSJobActivity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DSJobActivity" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="tblJobActivity">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JobSite" type="xs:string" minOccurs="0" />
+              <xs:element name="JobTicketNo" type="xs:int" minOccurs="0" />
+              <xs:element name="JobTicketDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ProductName" type="xs:string" minOccurs="0" />
+              <xs:element name="GeneratorName" type="xs:string" minOccurs="0" />
+              <xs:element name="Quantity" type="xs:double" minOccurs="0" />
+              <xs:element name="ManifestNo" type="xs:string" minOccurs="0" />
+              <xs:element name="PermitNo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

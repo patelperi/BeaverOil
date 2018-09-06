@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DSDescriptions" targetNamespace="http://www.tempuri.org/DSDescriptions.xsd" xmlns:mstns="http://www.tempuri.org/DSDescriptions.xsd" xmlns="http://www.tempuri.org/DSDescriptions.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DSDescriptions" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="tblHWNumberDESCs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DescriptionsID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="HWNumber" type="xs:string" />
+              <xs:element name="ProductDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductDescription1" type="xs:string" minOccurs="0" />
+              <xs:element name="ManifestDescription" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblHWNumberDESCs" />
+      <xs:field xpath="mstns:HWNumber" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

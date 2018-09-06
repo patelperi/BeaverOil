@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DSrptAttachments" targetNamespace="http://www.tempuri.org/DSrptAttachments.xsd"
+	xmlns:mstns="http://www.tempuri.org/DSrptAttachments.xsd" xmlns="http://www.tempuri.org/DSrptAttachments.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DSrptAttachments" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Table">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="GeneratorName" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSiteAddress1" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSite" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSiteCity" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSiteState" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSiteZip" type="xs:string" minOccurs="0" />
+							<xs:element name="TransporterName" type="xs:string" minOccurs="0" />
+							<xs:element name="TAddress1" type="xs:string" minOccurs="0" />
+							<xs:element name="TCity" type="xs:string" minOccurs="0" />
+							<xs:element name="TState" type="xs:string" minOccurs="0" />
+							<xs:element name="TZip" type="xs:string" minOccurs="0" />
+							<xs:element name="G_USEPAID" type="xs:string" minOccurs="0" />
+							<xs:element name="G_ILNumber" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

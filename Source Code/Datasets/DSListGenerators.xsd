@@ -1,0 +1,48 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DSListGenerators" targetNamespace="http://www.tempuri.org/DSListGenerators.xsd" xmlns:mstns="http://www.tempuri.org/DSListGenerators.xsd" xmlns="http://www.tempuri.org/DSListGenerators.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DSListGenerators" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="tblGenerators">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GeneratorID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="GeneratorName" type="xs:string" />
+              <xs:element name="JobSite" type="xs:string" />
+              <xs:element name="JobSiteAddress1" type="xs:string" />
+              <xs:element name="JobSiteAddress2" type="xs:string" minOccurs="0" />
+              <xs:element name="JobSiteCity" type="xs:string" />
+              <xs:element name="JobSiteState" type="xs:string" />
+              <xs:element name="JobSiteZip" type="xs:string" />
+              <xs:element name="GNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactName" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="ContacPhoneExt" type="xs:string" minOccurs="0" />
+              <xs:element name="BrokerName" type="xs:string" minOccurs="0" />
+              <xs:element name="BrokerContact" type="xs:string" minOccurs="0" />
+              <xs:element name="BrokerPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="BillingName" type="xs:string" minOccurs="0" />
+              <xs:element name="BillingAddress1" type="xs:string" minOccurs="0" />
+              <xs:element name="BillingAddress2" type="xs:string" minOccurs="0" />
+              <xs:element name="BillingCity" type="xs:string" minOccurs="0" />
+              <xs:element name="BillingState" type="xs:string" minOccurs="0" />
+              <xs:element name="BillingZip" type="xs:string" minOccurs="0" />
+              <xs:element name="G_USEPAID" type="xs:string" minOccurs="0" />
+              <xs:element name="Active" type="xs:boolean" minOccurs="0" />
+              <xs:element name="G_ILNumber" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblGenerators" />
+      <xs:field xpath="mstns:GeneratorName" />
+      <xs:field xpath="mstns:JobSite" />
+      <xs:field xpath="mstns:JobSiteAddress1" />
+      <xs:field xpath="mstns:JobSiteCity" />
+      <xs:field xpath="mstns:JobSiteState" />
+      <xs:field xpath="mstns:JobSiteZip" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

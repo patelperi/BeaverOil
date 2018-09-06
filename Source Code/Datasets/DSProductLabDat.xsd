@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DSProductLabDat" targetNamespace="http://www.tempuri.org/DSProductLabDat.xsd" xmlns:mstns="http://www.tempuri.org/DSProductLabDat.xsd" xmlns="http://www.tempuri.org/DSProductLabDat.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DSProductLabDat" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="tblProduct_LabData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ViewText" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="RemoveText" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductLabDataID" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="ProductID" type="xs:int" minOccurs="0" />
+              <xs:element name="TemplateFile" type="xs:string" minOccurs="0" />
+              <xs:element name="FileName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblProduct_LabData" />
+      <xs:field xpath="mstns:ProductLabDataID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

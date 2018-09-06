@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DSReceivables" targetNamespace="http://www.tempuri.org/DSReceivables.xsd" xmlns:mstns="http://www.tempuri.org/DSReceivables.xsd" xmlns="http://www.tempuri.org/DSReceivables.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DSReceivables" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="tblReceivables">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InvoiceID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="InvoiceDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="GeneratorName" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="JobTicketNo" type="xs:int" minOccurs="0" />
+              <xs:element name="InvoiceAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CheckNo" type="xs:string" minOccurs="0" />
+              <xs:element name="CheckDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CheckAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PaymentReceived" type="xs:boolean" minOccurs="0" />
+              <xs:element name="JobSiteAddress1" type="xs:string" minOccurs="0" />
+              <xs:element name="JobSiteCity" type="xs:string" minOccurs="0" />
+              <xs:element name="InvoiceNo" type="xs:string" minOccurs="0" />
+              <xs:element name="JobSite" type="xs:string" minOccurs="0" />
+              <xs:element name="JobTicketID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="PartialPayment" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

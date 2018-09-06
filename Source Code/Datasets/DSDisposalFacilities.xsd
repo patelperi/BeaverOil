@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DSDisposalFacilities" targetNamespace="http://www.tempuri.org/DSDisposalFacilities.xsd" xmlns:mstns="http://www.tempuri.org/DSDisposalFacilities.xsd" xmlns="http://www.tempuri.org/DSDisposalFacilities.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DSDisposalFacilities" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="tblDisposalFacilities">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DisposalFacilityID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="DisposalFacilityName" type="xs:string" />
+              <xs:element name="FAddress1" type="xs:string" minOccurs="0" />
+              <xs:element name="FAddress2" type="xs:string" minOccurs="0" />
+              <xs:element name="FCity" type="xs:string" minOccurs="0" />
+              <xs:element name="FState" type="xs:string" minOccurs="0" />
+              <xs:element name="FZip" type="xs:string" minOccurs="0" />
+              <xs:element name="FPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="FContactName" type="xs:string" minOccurs="0" />
+              <xs:element name="FContactPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="D_USEPAID" type="xs:string" minOccurs="0" />
+              <xs:element name="Active" type="xs:boolean" minOccurs="0" />
+              <xs:element name="D_ILNumber" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblDisposalFacilities" />
+      <xs:field xpath="mstns:DisposalFacilityName" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

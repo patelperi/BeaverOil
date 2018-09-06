@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="BeaverOil">
+</Property><Property Name="Solution File" Value="C:\BeaverOil\BeaverOil Dec 2016\BeaverOil\Source Code\BeaverOil.sln">
+</Property><Property Name="Date" Value="Monday, September 03, 2018">
+</Property><Property Name="Time" Value="21:31 PM">
+</Property></Properties><Event ErrorLevel="0" Project="BeaverOil" Source="BeaverOil.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="BeaverOil" Source="BeaverOil.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="BeaverOil.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="BeaverOil.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BeaverOil" Source="BeaverOil.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Installation_BeaverOil.vdproj" Source="..\Perry Files Mar-20-2005\Installation_BeaverOil\Installation_BeaverOil.vdproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Installation_BeaverOil.vdproj" Source="..\Perry Files Mar-20-2005\Installation_BeaverOil\Installation_BeaverOil.vdproj" Description="Converted">
+</Event></UpgradeLog>

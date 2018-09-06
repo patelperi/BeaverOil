@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installation_BeaverOil", "Installation_BeaverOil.vdproj", "{D6C88D73-33B5-4670-9407-D89F3E8153C6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D6C88D73-33B5-4670-9407-D89F3E8153C6}.Debug.ActiveCfg = Debug
+		{D6C88D73-33B5-4670-9407-D89F3E8153C6}.Debug.Build.0 = Debug
+		{D6C88D73-33B5-4670-9407-D89F3E8153C6}.Release.ActiveCfg = Release
+		{D6C88D73-33B5-4670-9407-D89F3E8153C6}.Release.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

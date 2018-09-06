@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DSJobBoard" targetNamespace="http://www.tempuri.org/DSJobBoard.xsd" xmlns:mstns="http://www.tempuri.org/DSJobBoard.xsd" xmlns="http://www.tempuri.org/DSJobBoard.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DSJobBoard" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="tblJobTickets">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JobTicketID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="GeneratorName" type="xs:string" minOccurs="0" />
+              <xs:element name="JobSiteCity" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductName" type="xs:string" minOccurs="0" />
+              <xs:element name="DriverName" type="xs:string" minOccurs="0" />
+              <xs:element name="ScheduleDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SpecialInstructions" type="xs:string" minOccurs="0" />
+              <xs:element name="ScheduledTime" type="xs:string" minOccurs="0" />
+              <xs:element name="TypeOfTruck" type="xs:string" minOccurs="0" />
+              <xs:element name="Drums" type="xs:boolean" minOccurs="0" />
+              <xs:element name="JobDone" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SpecialInstructions_T" type="xs:string" minOccurs="0" />
+              <xs:element name="IsCancelled" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TransporterID" type="xs:int" minOccurs="0" />
+              <xs:element name="TransporterName" type="xs:string" minOccurs="0" />
+              <xs:element name="TypeOfTruckID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

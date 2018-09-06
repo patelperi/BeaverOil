@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BeaverOil", "BeaverOil.vbproj", "{020404F0-1FD1-41FF-A293-0726BC139F65}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installation_BeaverOil", "..\Perry Files Mar-20-2005\Installation_BeaverOil\Installation_BeaverOil.vdproj", "{34CF9348-9FAD-4EF6-B006-8EBB85A14AE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{020404F0-1FD1-41FF-A293-0726BC139F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{020404F0-1FD1-41FF-A293-0726BC139F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{020404F0-1FD1-41FF-A293-0726BC139F65}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{020404F0-1FD1-41FF-A293-0726BC139F65}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{34CF9348-9FAD-4EF6-B006-8EBB85A14AE6}.Debug|Any CPU.ActiveCfg = Debug
+		{34CF9348-9FAD-4EF6-B006-8EBB85A14AE6}.Debug|Any CPU.Build.0 = Debug
+		{34CF9348-9FAD-4EF6-B006-8EBB85A14AE6}.Release|Any CPU.ActiveCfg = Release
+		{34CF9348-9FAD-4EF6-B006-8EBB85A14AE6}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

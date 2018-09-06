@@ -1,0 +1,1438 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{020404F0-1FD1-41FF-A293-0726BC139F65}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>BeaverOil</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>BeaverOil</RootNamespace>
+    <StartupObject>BeaverOil.frmMainScreen</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BeaverOil.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BeaverOil.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalKeyCodeLib">
+      <Name>CrystalKeyCodeLib</Name>
+      <HintPath>..\..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalKeyCodeLib.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.Excel">
+      <Name>Interop.Excel</Name>
+      <HintPath>bin\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core">
+      <Name>Interop.Microsoft.Office.Core</Name>
+      <HintPath>bin\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Interop.Excel">
+      <Name>Interop.Microsoft.Office.Interop.Excel</Name>
+      <HintPath>bin\Interop.Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Interop.Word">
+      <Name>Interop.Microsoft.Office.Interop.Word</Name>
+      <HintPath>bin\Interop.Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Office">
+      <Name>Interop.Office</Name>
+      <HintPath>bin\Interop.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE">
+      <Name>Interop.VBIDE</Name>
+      <HintPath>bin\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>system.web.services</Name>
+      <HintPath>..\..\..\..\..\windows\assembly\gac\system.web.services\1.0.5000.0__b03f5f7f11d50a3a\system.web.services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="bin\Analytical Input Forms\btex-water template.xls" />
+    <None Include="bin\Analytical Input Forms\CL1C-template.xls" />
+    <None Include="bin\Analytical Input Forms\CL2temp 10.03.xls" />
+    <None Include="bin\Analytical Input Forms\CL3 Oil Template.xls" />
+    <None Include="bin\Analytical Input Forms\CL3 template.xls" />
+    <None Include="bin\Analytical Input Forms\nr template.xls" />
+    <None Include="bin\Analytical Input Forms\pcb template REV. 2002.xls" />
+    <None Include="bin\Analytical Input Forms\SavedFiles\3-JJJ%27S TRUCK REPAIR INC - 3-JJJ%27S TRUCK REPAIR INC - BRIDGVIEW - MOTOR OILS.xls" />
+    <None Include="bin\Analytical Input Forms\SavedFiles\999 AVIATION - 999 AVIATION - WEST CHICAGO - MOTOR OIL.xls" />
+    <None Include="bin\Analytical Input Forms\SavedFiles\A &amp; A MIDWEST - A &amp; A MIDWEST - CHICAGO - MOTOR OIL.xls" />
+    <None Include="bin\Analytical Input Forms\SOLVENT TEMPLATE VOC%27s.xls" />
+    <None Include="bin\JobTrackingSystem.mdb" />
+    <None Include="Datasets\DSAccounting.xsx">
+      <DependentUpon>DSAccounting.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsAttachmentC.xsx">
+      <DependentUpon>dsAttachmentC.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSBOLs.xsx">
+      <DependentUpon>DSBOLs.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSCancelJobs.xsx">
+      <DependentUpon>DSCancelJobs.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSCustomerReport.xsx">
+      <DependentUpon>DSCustomerReport.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSCustomerSurveys.xsx">
+      <DependentUpon>DSCustomerSurveys.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsDailyHazNonHaz.xsx">
+      <DependentUpon>dsDailyHazNonHaz.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSDescriptions.xsc">
+      <DependentUpon>DSDescriptions.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSDisposalFacilities.xsx">
+      <DependentUpon>DSDisposalFacilities.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSEPA_BOLs.xsx">
+      <DependentUpon>DSEPA_BOLs.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSEPA_HazardousLoads.xsx">
+      <DependentUpon>DSEPA_HazardousLoads.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSEPA_Manifests.xsx">
+      <DependentUpon>DSEPA_Manifests.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsGenList.xsx">
+      <DependentUpon>dsGenList.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSHazardous.xsx">
+      <DependentUpon>DSHazardous.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSInHouseManifests.xsx">
+      <DependentUpon>DSInHouseManifests.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSInvoiceDetails.xsx">
+      <DependentUpon>DSInvoiceDetails.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSInvoices.xsx">
+      <DependentUpon>DSInvoices.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSInvoice_Details.xsx">
+      <DependentUpon>DSInvoice_Details.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSInvoicing.xsx">
+      <DependentUpon>DSInvoicing.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSInvoicingReport.xsx">
+      <DependentUpon>DSInvoicingReport.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSJobActivity.xsx">
+      <DependentUpon>DSJobActivity.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSJobBoard.xsx">
+      <DependentUpon>DSJobBoard.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSJobBoards.xsx">
+      <DependentUpon>DSJobBoards.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSJobTicket.xsx">
+      <DependentUpon>DSJobTicket.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSJobTickets_P.xsx">
+      <DependentUpon>DSJobTickets_P.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSJobTicket_Details.xsc">
+      <DependentUpon>DSJobTicket_Details.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSJobTicket_Details.xsx">
+      <DependentUpon>DSJobTicket_Details.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSListGenerators.xsx">
+      <DependentUpon>DSListGenerators.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSListProducts.xsx">
+      <DependentUpon>DSListProducts.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSMultiStops.xsx">
+      <DependentUpon>DSMultiStops.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsMWRD.xsx">
+      <DependentUpon>dsMWRD.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSNewJobSearch.xsc">
+      <DependentUpon>DSNewJobSearch.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSNewJobSearch.xsx">
+      <DependentUpon>DSNewJobSearch.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSNonHazardous.xsx">
+      <DependentUpon>DSNonHazardous.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSOutsideHaulers.xsx">
+      <DependentUpon>DSOutsideHaulers.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSPrintInvoice.xsx">
+      <DependentUpon>DSPrintInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSProductLabDat.xsc">
+      <DependentUpon>DSProductLabDat.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSProductRates.xsc">
+      <DependentUpon>DSProductRates.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSReceivables.xsx">
+      <DependentUpon>DSReceivables.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSReceivablesReport.xsx">
+      <DependentUpon>DSReceivablesReport.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSRecurringJobs.xsx">
+      <DependentUpon>DSRecurringJobs.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSrptAttachments.xsx">
+      <DependentUpon>DSrptAttachments.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSrptGenerator.xsx">
+      <DependentUpon>DSrptGenerator.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsrptReceiptControl.xsx">
+      <DependentUpon>dsrptReceiptControl.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSTransporterFacilities.xsx">
+      <DependentUpon>DSTransporterFacilities.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSVendors.xsx">
+      <DependentUpon>DSVendors.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DS_PayableCheck.xsx">
+      <DependentUpon>DS_PayableCheck.xsd</DependentUpon>
+    </None>
+    <Content Include="App.gif" />
+    <Content Include="app.ico" />
+    <Content Include="Datasets\DSAccounting.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAccounting.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\dsAttachmentC.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAttachmentC.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSBOLs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSBOLs.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSCancelJobs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCancelJobs.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSCheckRegister.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCheckRegister.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSCustomerReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCustomerReport.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSCustomerSurveys.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCustomerSurveys.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\dsDailyHazNonHaz.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDailyHazNonHaz.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSDescriptions.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSDescriptions.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSDisposalFacilities.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSDisposalFacilities.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSEPA_BOLs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEPA_BOLs.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSEPA_HazardousLoads.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEPA_HazardousLoads.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSEPA_Manifests.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEPA_Manifests.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\dsGenList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGenList.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSHazardous.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSHazardous.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSInHouseManifests.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSInHouseManifests.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSInvoiceDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSInvoiceDetails.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSInvoices.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSInvoices.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSInvoice_Details.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSInvoice_Details.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSInvoicing.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSInvoicing.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSInvoicingReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSInvoicingReport.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSItems.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSItems.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSJobActivity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSJobActivity.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSJobBoard.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSJobBoard.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSJobBoards.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSJobBoards.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSJobTicket.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSJobTicket.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSJobTickets_P.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSJobTickets_P.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSJobTicket_Details.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSJobTicket_Details.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSListGenerators.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSListGenerators.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSListProducts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSListProducts.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSMultiStops.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMultiStops.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\dsMWRD.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMWRD.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSNewJobSearch.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSNewJobSearch.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSNonHazardous.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSNonHazardous.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSOutsideHaulers.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSOutsideHaulers.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSP2Manifests.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSP2Manifests.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSPayable_Details.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPayable_Details.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\dsPRates.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPRates.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSPrintInvoice.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPrintInvoice.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSProductLabDat.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSProductLabDat.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSProductRates.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSProductRates.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSReceivables.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSReceivables.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSReceivablesReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSReceivablesReport.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSRecurringJobs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRecurringJobs.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSrptAttachments.xsd" />
+    <Content Include="Datasets\DSrptGenerator.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSrptGenerator.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\dsrptReceiptControl.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsrptReceiptControl.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSTransporterFacilities.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTransporterFacilities.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DSVendors.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSVendors.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Datasets\DS_PayableCheck.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_PayableCheck.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Images\PrinterIcon.gif" />
+    <Content Include="Images\viewTemplate.gif" />
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Datasets\DSAccounting.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAccounting.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\dsAttachmentC.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAttachmentC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSBOLs.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSBOLs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSCancelJobs.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCancelJobs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSCheckRegister.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCheckRegister.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSCustomerReport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCustomerReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSCustomerSurveys.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCustomerSurveys.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\dsDailyHazNonHaz.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDailyHazNonHaz.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSDescriptions.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSDescriptions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSDisposalFacilities.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSDisposalFacilities.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSEPA_BOLs.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEPA_BOLs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSEPA_HazardousLoads.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEPA_HazardousLoads.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSEPA_Manifests.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEPA_Manifests.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\dsGenList.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGenList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSHazardous.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSHazardous.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSInHouseManifests.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSInHouseManifests.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSInvoiceDetails.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSInvoiceDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSInvoices.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSInvoices.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSInvoice_Details.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSInvoice_Details.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSInvoicing.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSInvoicing.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSInvoicingReport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSInvoicingReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSItems.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSItems.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSJobActivity.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSJobActivity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSJobBoard.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSJobBoard.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSJobBoards.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSJobBoards.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSJobTicket.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSJobTicket.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSJobTickets_P.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSJobTickets_P.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSJobTicket_Details.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSJobTicket_Details.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSListGenerators.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSListGenerators.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSListProducts.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSListProducts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSMultiStops.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMultiStops.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\dsMWRD.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMWRD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSNewJobSearch.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSNewJobSearch.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSNonHazardous.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSNonHazardous.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSOutsideHaulers.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSOutsideHaulers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSP2Manifests.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSP2Manifests.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSPayable_Details.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPayable_Details.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\dsPRates.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPRates.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSPrintInvoice.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPrintInvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSProductLabDat.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSProductLabDat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSProductRates.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSProductRates.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSReceivables.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSReceivables.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSReceivablesReport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSReceivablesReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSRecurringJobs.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRecurringJobs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSrptGenerator.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSrptGenerator.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\dsrptReceiptControl.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsrptReceiptControl.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSTransporterFacilities.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTransporterFacilities.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSVendors.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSVendors.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DS_PayableCheck.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_PayableCheck.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCancelJobs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDescriptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDisposalFacility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGenerator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInvoicing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInvoicingList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmJobBoard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmJobTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLabData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLabData_L.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmListItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMainScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManualJobTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMultiStops.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNewJob.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPaperwork.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPayable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReceivables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSelectReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTransporter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper\CreateTXTLog.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helper\DataGridButtonControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\DataGridComboBoxColumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\DBHelper.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helper\INIFile.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helper\KDNGrid.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAccounting.vb">
+      <DependentUpon>rptAccounting.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptAnalysis.vb">
+      <DependentUpon>rptAnalysis.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptAttachmentC.vb">
+      <DependentUpon>rptAttachmentC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptCheckRegister.vb">
+      <DependentUpon>rptCheckRegister.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptCustomer.vb">
+      <DependentUpon>rptCustomer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptDailyHazNonHaz.vb">
+      <DependentUpon>rptDailyHazNonHaz.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptDailyPlant2.vb">
+      <DependentUpon>rptDailyPlant2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptdeposit.vb">
+      <DependentUpon>rptdeposit.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptGenerator1.vb">
+      <DependentUpon>rptGenerator.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptHazardous.vb">
+      <DependentUpon>rptHazardous.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptJobBoard.vb">
+      <DependentUpon>rptJobBoard.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptMultiStop.vb">
+      <DependentUpon>rptMultiStop.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptMWRDReport.vb">
+      <DependentUpon>rptMWRDReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptNonHazardous.vb">
+      <DependentUpon>rptNonHazardous.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptReceiptControl.vb">
+      <DependentUpon>rptReceiptControl.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rptWasteNoitification.vb">
+      <DependentUpon>rptWasteNoitification.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_BOLs_new.vb">
+      <DependentUpon>rpt_BOLs_new.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_CustomerSurveys.vb">
+      <DependentUpon>rpt_CustomerSurveys.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_EPA_BOLs.vb">
+      <DependentUpon>rpt_EPA_BOLs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_EPA_Hazardous1.vb">
+      <DependentUpon>rpt_EPA_Hazardous.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_EPA_Hazardous_old.vb">
+      <DependentUpon>rpt_EPA_Hazardous_old.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_EPA_Manifests.vb">
+      <DependentUpon>rpt_EPA_Manifests.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_FacilitiesList.vb">
+      <DependentUpon>rpt_FacilitiesList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_FEST_Log.vb">
+      <DependentUpon>rpt_FEST_Log.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_GeneratorsList.vb">
+      <DependentUpon>rpt_GeneratorsList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_Hazardous_new.vb">
+      <DependentUpon>rpt_Hazardous_new.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_InHouseManifests.vb">
+      <DependentUpon>rpt_InHouseManifests.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_Invoice.vb">
+      <DependentUpon>rpt_Invoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_InvoiceList1.vb">
+      <DependentUpon>rpt_InvoiceList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_Invoices.vb">
+      <DependentUpon>rpt_Invoices.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_JobActivity.vb">
+      <DependentUpon>rpt_JobActivity.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_JobTicket_Multistop1.vb">
+      <DependentUpon>rpt_JobTicket_Multistop.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_JobTicket_Multistop_new1.vb">
+      <DependentUpon>rpt_JobTicket_Multistop_new.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_Manual_MultiStop.vb">
+      <DependentUpon>rpt_Manual_MultiStop.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_NonHazardous.vb">
+      <DependentUpon>rpt_NonHazardous.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_OutsideHaulers.vb">
+      <DependentUpon>rpt_OutsideHaulers.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_P2Manifests_new.vb">
+      <DependentUpon>rpt_P2Manifests_new.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_PayableCheck.vb">
+      <DependentUpon>rpt_PayableCheck.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_PayableCheckSUB.vb">
+      <DependentUpon>rpt_PayableCheckSUB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_PayableCheck_new.vb">
+      <DependentUpon>rpt_PayableCheck_new.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_ProductsList.vb">
+      <DependentUpon>rpt_ProductsList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_ReceivableReport.vb">
+      <DependentUpon>rpt_ReceivableReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_Receivables.vb">
+      <DependentUpon>rpt_Receivables.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_TransportersList.vb">
+      <DependentUpon>rpt_TransportersList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\rpt_VendorsList.vb">
+      <DependentUpon>rpt_VendorsList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <EmbeddedResource Include="Forms\frmCancelJobs.resx">
+      <DependentUpon>frmCancelJobs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDescriptions.resx">
+      <DependentUpon>frmDescriptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDisposalFacility.resx">
+      <DependentUpon>frmDisposalFacility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGenerator.resx">
+      <DependentUpon>frmGenerator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInvoice.resx">
+      <DependentUpon>frmInvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInvoicing.resx">
+      <DependentUpon>frmInvoicing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInvoicingList.resx">
+      <DependentUpon>frmInvoicingList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmJobBoard.resx">
+      <DependentUpon>frmJobBoard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmJobTicket.resx">
+      <DependentUpon>frmJobTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLabData.resx">
+      <DependentUpon>frmLabData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLabData_L.resx">
+      <DependentUpon>frmLabData_L.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmListItems.resx">
+      <DependentUpon>frmListItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMainScreen.resx">
+      <DependentUpon>frmMainScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMaintenance.resx">
+      <DependentUpon>frmMaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManualJobTicket.resx">
+      <DependentUpon>frmManualJobTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMultiStops.resx">
+      <DependentUpon>frmMultiStops.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNewJob.resx">
+      <DependentUpon>frmNewJob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPaperwork.resx">
+      <DependentUpon>frmPaperwork.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPayable.resx">
+      <DependentUpon>frmPayable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProduct.resx">
+      <DependentUpon>frmProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReceivables.resx">
+      <DependentUpon>frmReceivables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSelectReport.resx">
+      <DependentUpon>frmSelectReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTransporter.resx">
+      <DependentUpon>frmTransporter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVendor.resx">
+      <DependentUpon>frmVendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helper\DataGridButtonControl.resx">
+      <DependentUpon>DataGridButtonControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helper\KDNGrid.resx">
+      <DependentUpon>KDNGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAccounting.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAccounting.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAnalysis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAnalysis.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAttachmentC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAttachmentC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCheckRegister.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCheckRegister.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCustomer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCustomer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptDailyHazNonHaz.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDailyHazNonHaz.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptDailyPlant2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDailyPlant2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptdeposit.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptdeposit.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptGenerator.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGenerator1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptHazardous.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHazardous.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptJobBoard.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptJobBoard.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptMultiStop.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMultiStop.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptMWRDReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMWRDReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptNonHazardous.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptNonHazardous.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptReceiptControl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptReceiptControl.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptWasteNoitification.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptWasteNoitification.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_BOLs_new.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_BOLs_new.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_CustomerSurveys.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_CustomerSurveys.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_EPA_BOLs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_EPA_BOLs.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_EPA_Hazardous.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_EPA_Hazardous1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_EPA_Hazardous_old.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_EPA_Hazardous_old.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_EPA_Manifests.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_EPA_Manifests.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_FacilitiesList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_FacilitiesList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_FEST_Log.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_FEST_Log.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_GeneratorsList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_GeneratorsList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Hazardous_new.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Hazardous_new.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_InHouseManifests.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_InHouseManifests.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Invoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Invoice.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_InvoiceList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_InvoiceList1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Invoices.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Invoices.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_JobActivity.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_JobActivity.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_JobTicket_Multistop.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_JobTicket_Multistop1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_JobTicket_Multistop_new.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_JobTicket_Multistop_new1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Manual_MultiStop.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Manual_MultiStop.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_NonHazardous.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_NonHazardous.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_OutsideHaulers.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_OutsideHaulers.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_P2Manifests_new.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_P2Manifests_new.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_PayableCheck.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_PayableCheck.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_PayableCheckSUB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_PayableCheckSUB.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_PayableCheck_new.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_PayableCheck_new.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_ProductsList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ProductsList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_ReceivableReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ReceivableReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Receivables.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Receivables.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_TransportersList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TransportersList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_VendorsList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_VendorsList.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

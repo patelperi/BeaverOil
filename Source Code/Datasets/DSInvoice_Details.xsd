@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DSInvoice_Details" targetNamespace="http://www.tempuri.org/DSInvoice_Details.xsd"
+	xmlns:mstns="http://www.tempuri.org/DSInvoice_Details.xsd" xmlns="http://www.tempuri.org/DSInvoice_Details.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DSInvoice_Details" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tblInvoice_Details">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="JobDetailID" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="JobTicketID" type="xs:int" minOccurs="0" />
+							<xs:element name="Quantity" type="xs:double" minOccurs="0" />
+							<xs:element name="UOM" type="xs:string" minOccurs="0" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+							<xs:element name="ItemIRate" type="xs:double" minOccurs="0" />
+							<xs:element name="ItemIAmount" type="xs:double" minOccurs="0" />
+							<xs:element name="Invoiced" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tblInvoice_Details" />
+			<xs:field xpath="mstns:JobDetailID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

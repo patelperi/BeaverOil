@@ -1,0 +1,76 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DSP2Manifests" targetNamespace="http://www.tempuri.org/DSP2Manifests.xsd" xmlns:mstns="http://www.tempuri.org/DSP2Manifests.xsd" xmlns="http://www.tempuri.org/DSP2Manifests.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DSP2Manifests" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="tblJobTickets">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JobSite" type="xs:string" minOccurs="0" />
+              <xs:element name="JobSiteAddress1" type="xs:string" minOccurs="0" />
+              <xs:element name="JobSiteCity" type="xs:string" minOccurs="0" />
+              <xs:element name="JobSiteState" type="xs:string" minOccurs="0" />
+              <xs:element name="JobSiteZip" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="TransporterName" type="xs:string" minOccurs="0" />
+              <xs:element name="T_USEPAID" type="xs:string" minOccurs="0" />
+              <xs:element name="TPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="DisposalFacilityName" type="xs:string" minOccurs="0" />
+              <xs:element name="FAddress1" type="xs:string" minOccurs="0" />
+              <xs:element name="FCity" type="xs:string" minOccurs="0" />
+              <xs:element name="FState" type="xs:string" minOccurs="0" />
+              <xs:element name="FZip" type="xs:string" minOccurs="0" />
+              <xs:element name="D_USEPAID" type="xs:string" minOccurs="0" />
+              <xs:element name="FPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductName" type="xs:string" minOccurs="0" />
+              <xs:element name="JobTicketID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="G_USEPAID" type="xs:string" minOccurs="0" />
+              <xs:element name="G_ILNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="Manifest_Description" type="xs:string" minOccurs="0" />
+              <xs:element name="Quantity" type="xs:double" minOccurs="0" />
+              <xs:element name="UOM" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblProducts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JobSite" type="xs:string" minOccurs="0" />
+              <xs:element name="JobSiteAddress1" type="xs:string" minOccurs="0" />
+              <xs:element name="JobSiteCity" type="xs:string" minOccurs="0" />
+              <xs:element name="JobSiteState" type="xs:string" minOccurs="0" />
+              <xs:element name="JobSiteZip" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="TransporterName" type="xs:string" minOccurs="0" />
+              <xs:element name="T_USEPAID" type="xs:string" minOccurs="0" />
+              <xs:element name="TPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="DisposalFacilityName" type="xs:string" minOccurs="0" />
+              <xs:element name="FAddress1" type="xs:string" minOccurs="0" />
+              <xs:element name="FCity" type="xs:string" minOccurs="0" />
+              <xs:element name="FState" type="xs:string" minOccurs="0" />
+              <xs:element name="FZip" type="xs:string" minOccurs="0" />
+              <xs:element name="D_USEPAID" type="xs:string" minOccurs="0" />
+              <xs:element name="FPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductName" type="xs:string" minOccurs="0" />
+              <xs:element name="JobTicketID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="G_USEPAID" type="xs:string" minOccurs="0" />
+              <xs:element name="G_ILNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="Manifest_Description" type="xs:string" minOccurs="0" />
+              <xs:element name="Quantity" type="xs:double" minOccurs="0" />
+              <xs:element name="UOM" type="xs:string" minOccurs="0" />
+              <xs:element name="ApprovalNo" type="xs:string" minOccurs="0" />
+              <xs:element name="MailingAddress1" type="xs:string" minOccurs="0" />
+              <xs:element name="MailingAddress2" type="xs:string" minOccurs="0" />
+              <xs:element name="MailingCity" type="xs:string" minOccurs="0" />
+              <xs:element name="MailingName" type="xs:string" minOccurs="0" />
+              <xs:element name="MailingState" type="xs:string" minOccurs="0" />
+              <xs:element name="MailingZip" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductDescription1" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

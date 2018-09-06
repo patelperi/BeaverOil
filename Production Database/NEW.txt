@@ -1,0 +1,3 @@
+ADD cwt CODE, 2 CHAR, AND ADD TO REPORT hAZ & nON AND bol AND fEST LOG
+
+Duplicate invoice : when error happen, it created second record

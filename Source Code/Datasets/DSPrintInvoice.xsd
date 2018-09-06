@@ -1,0 +1,54 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DSPrintInvoice" targetNamespace="http://www.tempuri.org/DSPrintInvoice.xsd"
+	xmlns:mstns="http://www.tempuri.org/DSPrintInvoice.xsd" xmlns="http://www.tempuri.org/DSPrintInvoice.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DSPrintInvoice" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tblInvoice_Details">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="InvoiceNo" type="xs:string" minOccurs="0" />
+							<xs:element name="InvoiceDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="InvoiceAmount" type="xs:decimal" minOccurs="0" />
+							<xs:element name="BillingName" type="xs:string" minOccurs="0" />
+							<xs:element name="BillingAddress1" type="xs:string" minOccurs="0" />
+							<xs:element name="BillingCity" type="xs:string" minOccurs="0" />
+							<xs:element name="BillingState" type="xs:string" minOccurs="0" />
+							<xs:element name="BillingZip" type="xs:string" minOccurs="0" />
+							<xs:element name="DisposalFacilityName" type="xs:string" minOccurs="0" />
+							<xs:element name="FAddress1" type="xs:string" minOccurs="0" />
+							<xs:element name="FCity" type="xs:string" minOccurs="0" />
+							<xs:element name="FState" type="xs:string" minOccurs="0" />
+							<xs:element name="FZip" type="xs:string" minOccurs="0" />
+							<xs:element name="JobTicketDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TransporterName" type="xs:string" minOccurs="0" />
+							<xs:element name="GNo" type="xs:string" minOccurs="0" />
+							<xs:element name="Quantity" type="xs:double" minOccurs="0" />
+							<xs:element name="UOM" type="xs:string" minOccurs="0" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+							<xs:element name="ManifestNo" type="xs:string" minOccurs="0" />
+							<xs:element name="RefNo" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSite" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSiteAddress1" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSiteCity" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSiteState" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSiteZip" type="xs:string" minOccurs="0" />
+							<xs:element name="ItemIRate" type="xs:double" minOccurs="0" />
+							<xs:element name="ItemIAmount" type="xs:double" minOccurs="0" />
+							<xs:element name="JobPO" type="xs:string" minOccurs="0" />
+							<xs:element name="GeneratorName" type="xs:string" minOccurs="0" />
+							<xs:element name="ProductName" type="xs:string" minOccurs="0" />
+							<xs:element name="JobTicketID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="InvoiceDescription" type="xs:string" minOccurs="0" />
+							<xs:element name="TicketNo" type="xs:int" minOccurs="0" />
+							<xs:element name="BillingAddress2" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSiteAddress2" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

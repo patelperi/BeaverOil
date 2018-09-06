@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DSEPA_HazardousLoads" targetNamespace="http://www.tempuri.org/DSEPA_HazardousLoads.xsd"
+	xmlns:mstns="http://www.tempuri.org/DSEPA_HazardousLoads.xsd" xmlns="http://www.tempuri.org/DSEPA_HazardousLoads.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DSEPA_HazardousLoads" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="tblInvoicing">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ScheduleDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ManifestNo" type="xs:string" minOccurs="0" />
+							<xs:element name="GenNo" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSite" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSiteAddress1" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSiteCity" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSiteState" type="xs:string" minOccurs="0" />
+							<xs:element name="JobSiteZip" type="xs:string" minOccurs="0" />
+							<xs:element name="Quantity" type="xs:double" minOccurs="0" />
+							<xs:element name="HWNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="BSW" type="xs:double" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
